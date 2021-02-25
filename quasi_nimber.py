@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Feb 10 08:03:58 2021
-@author: João Pedro Neto
+@author: João Pedro Neto (code), Carlos Santos & Alexandre Silva (algorithm)
 """
 from math import log2,ceil
 from collections import Counter
