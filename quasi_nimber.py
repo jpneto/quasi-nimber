@@ -18,7 +18,8 @@ def force(player1, player2):
   for x in player1:
     for y in player2:
       dic[x^y] += 1
-  return { k for k,v in dic.items() if v==len(player1) }
+  vals = { k for k,v in dic.items() if v==len(player1) }
+  return {min(vals)} if vals else set()
 
 
 def next_pow2(m):
