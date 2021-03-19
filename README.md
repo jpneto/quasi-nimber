@@ -1,6 +1,8 @@
 ## Quasi-nimbers
 
-This repository includes Python code to compute the value of games described in article "Disjunctive Sums of Quasi-nimbers"
+This repository includes Python code to compute the lists of unsafe nimbers described in article "Disjunctive Sums of Quasi-nimbers".
+
+The algorithm assumes, as stated in the paper, that given two lists <img src="https://render.githubusercontent.com/render/math?math=\mathbf{L}"> and <img src="https://render.githubusercontent.com/render/math?math=\mathbf{R}">, <img src="https://render.githubusercontent.com/render/math?math=(\mathbf{L}'\subsetneq \mathbf{L},\mathbf{R}'\subsetneq \mathbf{R})"> are irreducible.
 
 Available code:
 
