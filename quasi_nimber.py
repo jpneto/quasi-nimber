@@ -19,7 +19,7 @@ def force(player1, player2):
     for y in player2:
       dic[x^y] += 1
   vals = { k for k,v in dic.items() if v==len(player1) }
-  return {min(vals)} if vals else set()
+  return vals # {min(vals)} if vals else set()
 
 
 def next_pow2(m):
@@ -119,8 +119,13 @@ def solve(Ls, Rs):
   assert len(Rs)==len(Ls)
   n = len(Ls)
   
-  if n==1:    #    LU(L,R)          LU(R,L)
-    return force(Ls[0],Rs[0]), force(Rs[0],Ls[0])
+  if n==1:              
+    vals1 = force(Ls[0],Rs[0]) # LU(L,R)
+    vals2 = force(Rs[0],Ls[0]) # LU(R,L)
+    vals = vals1 & vals2
+    if vals:
+      return {min(vals)}, {min(vals)}
+    return vals1, vals2
   
   # if n>1, iterate all valid combinations
   m = [ [0]*n for _ in range(n) ]   # table with unsafe moves

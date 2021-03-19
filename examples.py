@@ -17,3 +17,15 @@ print(solve(Ls, Rs))
 Ls = [{2,4,6}, {1,2}, {1,4}, {6,7}, {1,4,7}]
 Rs = [{1,2,3}, {1,3}, {2,6}, {1,2}, {1,2,3,4,5}]
 print(solve(Ls, Rs))
+
+Ls = [{5,6}]
+Rs = [{1,2}]
+print(solve(Ls, Rs))
+
+Ls = [{5,7}]
+Rs = [{1,2}]
+print(solve(Ls, Rs))
+
+Ls = [{5,6}]
+Rs = [{0,1,2,3,4,6,7}]
+print(solve(Ls, Rs))
