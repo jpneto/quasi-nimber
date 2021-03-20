@@ -29,3 +29,7 @@ print(solve(Ls, Rs))
 Ls = [{5,6}]
 Rs = [{0,1,2,3,4,6,7}]
 print(solve(Ls, Rs))
+
+Ls = [{0,1,2,7}, {0,3,5}, {0}]
+Rs = [{2}, {1,6,8}, {3,7}]
+print(solve(Ls, Rs))
